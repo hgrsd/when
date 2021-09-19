@@ -1,8 +1,14 @@
-# when Project
+# when
 
-This project uses Quarkus, the Supersonic Subatomic Java Framework.
+A thin occurrence-as-a-service Quarkus application that wraps `lib-recur`. 
 
-If you want to learn more about Quarkus, please visit its website: https://quarkus.io/ .
+*Note*
+
+This is not a production-ready project by any stretch if the imagination; it was mostly a means for me to experiment a little with Quarkus.
+
+## Use
+
+`GET /occurrences?rrule=<rrule>&from=<datetime>&to=<datetime>` will return a JSON response with an array of date-times.
 
 ## Running the application in dev mode
 
@@ -42,13 +48,3 @@ Or, if you don't have GraalVM installed, you can run the native executable build
 ```
 
 You can then execute your native executable with: `./target/when-0.1-runner`
-
-If you want to learn more about building native executables, please consult https://quarkus.io/guides/maven-tooling.html.
-
-## Provided Code
-
-### RESTEasy JAX-RS
-
-Easily start your RESTful Web Services
-
-[Related guide section...](https://quarkus.io/guides/getting-started#the-jax-rs-resources)
